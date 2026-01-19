@@ -284,8 +284,8 @@
 
 /* Custom bracket controls styling */
 .bracket-controls.react-flow__controls {
-	top: 10px;
-	right: 10px;
+	top: 0;
+	right: 0;
 	bottom: auto;
 	left: auto;
 	box-shadow: none;
