@@ -170,14 +170,18 @@
 	background: var(--inner-ring-color);
 }
 
-.bracket-container--interactive .player-node--empty .player-photo-placeholder::after {
+.bracket-container--interactive
+	.player-node--empty
+	.player-photo-placeholder::after {
 	filter: grayscale(100%);
 }
 
 /* Pickable State - hoverable/clickable for making predictions */
 .player-node--pickable {
 	cursor: pointer;
-	transition: transform 0.15s ease, box-shadow 0.15s ease;
+	transition:
+		transform 0.15s ease,
+		box-shadow 0.15s ease;
 }
 
 .player-node--pickable:hover {
@@ -185,7 +189,9 @@
 }
 
 .player-node--pickable:hover .player-photo-ring {
-	box-shadow: 0 0 0 3px var(--yellow), 0 0 15px rgba(255, 215, 0, 0.4);
+	box-shadow:
+		0 0 0 3px var(--yellow),
+		0 0 15px rgba(255, 215, 0, 0.4);
 }
 
 .player-node--pickable:focus {
@@ -193,12 +199,16 @@
 }
 
 .player-node--pickable:focus-visible .player-photo-ring {
-	box-shadow: 0 0 0 3px var(--yellow), 0 0 0 5px var(--black);
+	box-shadow:
+		0 0 0 3px var(--yellow),
+		0 0 0 5px var(--black);
 }
 
 /* Selected State - user has picked this player (checkmark badge) */
 .player-node--selected .player-photo-ring {
-	box-shadow: 0 0 0 2px var(--yellow), 0 0 12px rgba(255, 174, 0, 0.4);
+	box-shadow:
+		0 0 0 2px var(--yellow),
+		0 0 12px rgba(255, 174, 0, 0.4);
 }
 
 /* Checkmark entrance animation */
